@@ -1,0 +1,55 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* 격자 레이아웃 설정 (2열 배치) */
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1:1 비율로 2개씩 나열 */
+    gap: 20px; /* 간격 */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 각 프로젝트 박스 디자인 */
+.project {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* 마우스 올리면 살짝 위로 */
+}
+
+.project a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.project h2 {
+    color: #e91e63; /* 포인트 컬러 */
+    margin-top: 0;
+}
+
+/* 모바일 화면에서는 한 줄로 나오게 변경 */
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
