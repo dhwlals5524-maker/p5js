@@ -3,7 +3,7 @@ function setup() {
   frameRate(20.6);
   pixelDensity(1)
 
-  saveGif('오지민20230525과제4', 10); 
+  //saveGif('오지민20230525과제4', 10); 
 }
 
 function draw() {
@@ -111,3 +111,4 @@ function drawCornKernels() {
   ellipse(175, 290, kW, kH); ellipse(185, 290, kW, kH); ellipse(195, 290, kW, kH); ellipse(205, 290, kW, kH); ellipse(215, 290, kW, kH); ellipse(225, 290, kW, kH);
   ellipse(175, 310, kW, kH); ellipse(185, 310, kW, kH); ellipse(195, 310, kW, kH); ellipse(205, 310, kW, kH); ellipse(215, 310, kW, kH); ellipse(225, 310, kW, kH);
 }
+
